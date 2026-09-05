@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>EmploiMatch — Moteur de recherche d'emploi intelligent</title>
+
+  <meta
+    name="description"
+    content="EmploiMatch est un moteur de recherche d'emploi conçu pour agréger, structurer et analyser des offres afin d'aider les candidats à identifier les opportunités les plus pertinentes."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f8fa;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-size: 22px;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #4b5563;
+      margin-left: 24px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #111827;
+    }
+
+    .hero {
+      background: #ffffff;
+      padding: 90px 8%;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 46px;
+      max-width: 900px;
+      margin: 0 auto 24px;
+      line-height: 1.2;
+      color: #111827;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 19px;
+      color: #6b7280;
+    }
+
+    .section {
+      padding: 70px 8%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #111827;
+    }
+
+    .section-intro {
+      max-width: 850px;
+      color: #6b7280;
+      margin-bottom: 36px;
+      font-size: 17px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 28px;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      font-size: 19px;
+      color: #111827;
+    }
+
+    .card p {
+      color: #6b7280;
+      font-size: 15px;
+    }
+
+    .process {
+      background: #ffffff;
+      border-top: 1px solid #e5e7eb;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .status {
+      background: #eef2ff;
+      border-radius: 12px;
+      padding: 28px;
+      margin-top: 30px;
+    }
+
+    .status strong {
+      color: #111827;
+    }
+
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      padding: 32px 8%;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      nav a {
+        margin: 0 10px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero {
+        padding: 65px 6%;
+      }
+
+      .section {
+        padding: 55px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">EmploiMatch</div>
+
+    <nav>
+      <a href="#projet">Le projet</a>
+      <a href="#fonctionnement">Fonctionnement</a>
+      <a href="#donnees">Données</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>Un moteur de recherche d'emploi pensé pour mieux rapprocher les candidats et les offres</h1>
+
+      <p>
+        EmploiMatch est une plateforme en cours de développement qui vise à centraliser,
+        structurer et analyser des offres d'emploi issues de différentes sources afin de
+        faciliter la recherche d'opportunités pertinentes.
+      </p>
+    </section>
+
+    <section class="section" id="projet">
+      <h2>Le projet</h2>
+
+      <p class="section-intro">
+        La recherche d'emploi repose aujourd'hui sur de nombreuses plateformes,
+        dont les formats, les critères et la qualité des informations peuvent varier.
+        EmploiMatch a pour objectif de réunir ces informations dans une structure commune
+        afin de rendre la recherche plus simple, plus lisible et plus adaptée au profil de chaque candidat.
+      </p>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Agrégation des offres</h3>
+          <p>
+            Collecter des offres issues de sources autorisées et de services partenaires
+            afin de proposer une vision plus large du marché de l'emploi.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Normalisation des données</h3>
+          <p>
+            Harmoniser les informations telles que l'intitulé du poste, la localisation,
+            le type de contrat, l'expérience demandée et les compétences recherchées.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Analyse des offres</h3>
+          <p>
+            Exploiter les données disponibles dans les annonces pour mieux identifier
+            les compétences, les critères importants et les caractéristiques du poste.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Mise en correspondance</h3>
+          <p>
+            Aider les candidats à repérer les offres les plus cohérentes avec leur expérience,
+            leurs compétences, leurs préférences et leurs contraintes professionnelles.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="process" id="fonctionnement">
+      <div class="section">
+
+        <h2>Fonctionnement</h2>
+
+        <p class="section-intro">
+          Les offres sont récupérées auprès de sources autorisées, puis transformées
+          dans un format homogène avant d'être analysées et rendues disponibles
+          dans le moteur de recherche.
+        </p>
+
+        <div class="cards">
+
+          <div class="card">
+            <h3>1. Collecte</h3>
+            <p>
+              Récupération des offres publiées via des API ou des sources de données autorisées.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>2. Structuration</h3>
+            <p>
+              Conversion des données reçues dans un modèle commun afin de faciliter
+              leur comparaison et leur exploitation.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>3. Enrichissement</h3>
+            <p>
+              Analyse des descriptions afin d'identifier certaines informations utiles
+              lorsqu'elles ne sont pas directement disponibles sous forme structurée.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>4. Recherche</h3>
+            <p>
+              Mise à disposition de critères de recherche et de filtrage permettant
+              aux candidats de mieux cibler les opportunités pertinentes.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="donnees">
+
+      <h2>Utilisation des données</h2>
+
+      <p class="section-intro">
+        EmploiMatch utilise les données d'offres d'emploi dans le seul but de faciliter
+        leur consultation, leur structuration et leur mise en correspondance avec les besoins
+        des utilisateurs. Les données provenant de services tiers restent soumises aux
+        conditions d'utilisation et aux licences de leurs fournisseurs respectifs.
+      </p>
+
+      <div class="status">
+        <strong>Statut du projet :</strong>
+        la plateforme est actuellement en phase de développement et d'intégration
+        de ses premières sources de données.
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 EmploiMatch — Projet de moteur de recherche d'emploi.
+  </footer>
+
+</body>
+</html>
